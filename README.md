@@ -10,24 +10,35 @@ User can see all other notes posted by another user without access to 'Edit and 
 
 
 
-https://wakatime.com/badge/github/Naseeri055/Note.svg
+Markdown
+
+[![wakatime](https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg)](https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37)
+
+HTML
+
+<a href="https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37"><img src="https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg" alt="wakatime"></a>
 
 
-[![wakatime](https://wakatime.com/badge/github/Naseeri055/Note.svg)](https://wakatime.com/badge/github/Naseeri055/Note)
-
-<a href="https://wakatime.com/badge/github/Naseeri055/Note"><img src="https://wakatime.com/badge/github/Naseeri055/Note.svg" alt="wakatime"></a>
-
-
-!https://wakatime.com/badge/github/Naseeri055/Note.svg!:https://wakatime.com/badge/github/Naseeri055/Note
+Textile
+!https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg!:https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37
 
 
 
-{<img src="https://wakatime.com/badge/github/Naseeri055/Note.svg" alt="wakatime" />}[https://wakatime.com/badge/github/Naseeri055/Note]
+Rdoc
+{<img src="https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg" alt="wakatime" />}[https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37]
 
 
-image:https://wakatime.com/badge/github/Naseeri055/Note.svg["wakatime", link="https://wakatime.com/badge/github/Naseeri055/Note"]
+AsciiDoc
+image:https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg["wakatime", link="https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37"]
 
-.. image:: https://wakatime.com/badge/github/Naseeri055/Note.svg
-    :target: https://wakatime.com/badge/github/Naseeri055/Note
-    
-    =for html <a href="https://wakatime.com/badge/github/Naseeri055/Note"><img src="https://wakatime.com/badge/github/Naseeri055/Note.svg"></a>
+
+RST
+.. image:: https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg
+
+
+
+Pod
+=for html <a href="https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37"><img src="https://wakatime.com/badge/user/04bbea6a-b8a3-4cc3-b8c8-e6d4a61c4547/project/7aa80fb3-e6bc-4238-9b2c-13ba3c684c37.svg"></a>
+
+
+
