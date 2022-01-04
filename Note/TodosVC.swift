@@ -9,7 +9,9 @@ import UIKit
 import CoreData
 
 class TodosVC: UIViewController {
-    
+    var posts = [Post]()
+    var selectedPost:Post?
+    var selectedPostImage:UIImage?
     var todosArray:[Todo] = [
     ]
     @IBOutlet weak var todosTableView: UITableView!

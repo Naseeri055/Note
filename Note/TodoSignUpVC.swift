@@ -1,16 +1,13 @@
-//
-//  RegisterViewController.swift
-//  firebaseDemo
-//
-//  Created by user on 19/12/2021.
-//
-
 import UIKit
 import Firebase
-class SignUpViewController: UIViewController {
+
+class TodoSignUpVC: UIViewController {
     let imagePickerController = UIImagePickerController()
+    
     var activityIndicator = UIActivityIndicatorView()
-    @IBOutlet weak var userImageView: UIImageView! {
+  
+    @IBOutlet var userImageView: UIImageView! {
+    
         didSet {
             userImageView.layer.borderColor = UIColor.systemGreen.cgColor
             userImageView.layer.borderWidth = 3.0
@@ -21,26 +18,33 @@ class SignUpViewController: UIViewController {
             userImageView.addGestureRecognizer(tabGesture)
         }
     }
+    @IBOutlet weak var nameLabel1: UILabel!
+    @IBOutlet weak var emailLabel1: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField1: UITextField!
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordLable1: UILabel!
+    @IBOutlet weak var passwordLable2: UILabel!
+    @IBOutlet weak var registeriBuott: UIButton!
+    @IBOutlet weak var LoginButt: UIButton!
     
     @IBOutlet weak var confirmPasswordTextField: UITextField!
-    override func viewDidLoad() {
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+        override func viewDidLoad() {
         super.viewDidLoad()
-        imagePickerController.delegate = self
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func handleRegister(_ sender: Any) {
         
+    }
+    
+        @IBAction func handleRegister(_ sender: Any) {
         if let image = userImageView.image,
-           let imageData = image.jpegData(compressionQuality: 0.75),
+        
+        let imageData = image.jpegData(compressionQuality: 0.75),
            let name = nameTextField.text,
-           let email = emailTextField.text,
-           let password = passwordTextField.text,
-           let confirmPassword = confirmPasswordTextField.text,
-           password == confirmPassword {
+            let email = emailTextField1.text,
+        let password = passwordTextField.text,
+        let  confirmPassword = confirmPasswordTextField.text,
+        password == confirmPassword {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let error = error {
@@ -71,31 +75,32 @@ class SignUpViewController: UIViewController {
                                     if let error = error {
                                         print("Registration Database error",error.localizedDescription)
                                     }else {
-                                        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController") as? UINavigationController {
-                                            vc.modalPresentationStyle = .fullScreen
-                                            Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
+                                        if let vc = UIStoryboard(name: "Main", bundle: nil)
+                                            .instantiateViewController(withIdentifier: "TodosVC") as? UINavigationController {
+                                                vc.modalPresentationStyle = .fullScreen
+                                                Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                                             self.present(vc, animated: true, completion: nil)
+                                            }
                                         }
-                                    }
                                 }
                             }
-                        }
+                            }
+                    }
                     }
                 }
             }
-        }
+        
         
     }
-    
-    
+    @IBAction func LoginButton(_ sender: Any) {
+    }
 }
+extension TodoSignUpVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
-extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    
     @objc func selectImage() {
         showAlert()
     }
-    
+
     func showAlert() {
         let alert = UIAlertController(title: "choose Profile Picture", message: "where do you want to pick your image from?", preferredStyle: .actionSheet)
         let cameraAction = UIAlertAction(title: "Camera", style: .default) { Action in
@@ -113,7 +118,7 @@ extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationCon
         self.present(alert, animated: true, completion: nil)
     }
     func getImage( from sourceType: UIImagePickerController.SourceType) {
-        
+
         if UIImagePickerController.isSourceTypeAvailable(sourceType) {
             imagePickerController.sourceType = sourceType
             self.present(imagePickerController, animated: true, completion: nil)

@@ -24,8 +24,8 @@ class NewTodoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if !isCreation{
-            mainButton.setTitle("تعديل", for: .normal)
-            navigationItem.title = "تعديل مهمة"
+            mainButton.setTitle("Edit", for: .normal)
+            navigationItem.title = "Edit note"
             
             if let todo = editedTodo {
                 titleTextField.text = todo.title
@@ -52,8 +52,8 @@ class NewTodoVC: UIViewController {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "NewTodoAdded"), object: nil, userInfo: ["addedTodo": todo])
             
             
-            let alert = UIAlertController(title: "تمت الإضافة", message: "تم إضافة المهمة بنجاح", preferredStyle: UIAlertController.Style.alert)
-            let closeAction = UIAlertAction(title: "تم", style: UIAlertAction.Style.cancel) { _ in
+            let alert = UIAlertController(title: "Added successfully", message: "Note added successfully", preferredStyle: UIAlertController.Style.alert)
+            let closeAction = UIAlertAction(title: "It was completed", style: UIAlertAction.Style.cancel) { _ in
                 self.tabBarController?.selectedIndex = 0
                 self.titleTextField.text = ""
                 self.detailsTextView.text = ""
@@ -68,10 +68,10 @@ class NewTodoVC: UIViewController {
             
         }else { // else, if the the view controller is opened for edit (not for create)
             let todo = Todo(title: titleTextField.text!, image: todoImageView.image, details: detailsTextView.text)
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CurrentTodoEdited"), object: nil, userInfo: ["editedTodo": todo, "editedTodoIndex": editedTodoIndex])
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CurrentTodoEdited"), object: nil, userInfo: ["editedTodo": todo, "editedTodoIndex": editedTodoIndex as Any])
             
-            let alert = UIAlertController(title: "تم التعديل", message: "تم تعديل المهمة بنجاح.", preferredStyle: UIAlertController.Style.alert)
-            let closeAction = UIAlertAction(title: "تم", style: UIAlertAction.Style.cancel) { _ in
+            let alert = UIAlertController(title: "Edit note", message: "The note has been successfully modified" , preferredStyle: UIAlertController.Style.alert)
+            let closeAction = UIAlertAction(title: "It was completed", style: UIAlertAction.Style.cancel) { _ in
                 self.navigationController?.popViewController(animated: true)
                 self.titleTextField.text = ""
                 self.detailsTextView.text = ""

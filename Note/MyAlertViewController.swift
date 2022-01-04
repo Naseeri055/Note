@@ -1,9 +1,9 @@
-//
-//  MyAlertViewController.swift
-//  Note
-//
-//  Created by Nasser Aseeri on 30/05/1443 AH.
-//
+////
+////  MyAlertViewController.swift
+////  Note
+////
+////  Created by Nasser Aseeri on 30/05/1443 AH.
+////
 //
 //import Foundation
 //import CleanyModal

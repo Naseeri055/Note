@@ -11,7 +11,7 @@
 //    var posts = [Post]()
 //    var selectedPost:Post?
 //    var selectedPostImage:UIImage?
-//    
+//
 //    @IBOutlet weak var postsTableView: UITableView! {
 //        didSet {
 //            postsTableView.delegate = self
@@ -39,7 +39,7 @@
 //                            ref.collection("users").document(userId).getDocument { userSnapshot, error in
 //                                if let error = error {
 //                                    print("ERROR user Data",error.localizedDescription)
-//                                    
+//
 //                                }
 //                                if let userSnapshot = userSnapshot,
 //                                   let userData = userSnapshot.data(){
@@ -49,7 +49,7 @@
 //                                    DispatchQueue.main.async {
 //                                        self.postsTableView.reloadData()
 //                                    }
-//                                    
+//
 //                                }
 //                            }
 //                        }
@@ -119,9 +119,9 @@
 //            } catch  {
 //                print("ERROR in signout",error.localizedDescription)
 //            }
-//            
+//
 //        }
-//        
+//
 //        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //            if let identifier = segue.identifier {
 //                if identifier == "toPostVC" {
@@ -134,21 +134,21 @@
 //                    vc.selectedPostImage = selectedPostImage
 //                }
 //            }
-//         
+//
 //        }
 //    }
-//    
+//
 //    extension HomeViewController: UITableViewDataSource {
 //        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //            return posts.count
 //        }
-//        
+//
 //        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell") as! PostCell
 //            return cell.configure(with: posts[indexPath.row])
 //        }
-//        
-//        
+//
+//
 //    }
 //    extension HomeViewController: UITableViewDelegate {
 //        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -163,7 +163,7 @@
 //              performSegue(withIdentifier: "toPostVC", sender: self)
 //            }else {
 //                performSegue(withIdentifier: "toDetailsVC", sender: self)
-//                
+//
 //            }
 //        }
 //    }

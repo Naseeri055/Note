@@ -13,7 +13,7 @@ class TodoStorage {
     static func storeTodo(todo: Todo){
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         let manageContext = appdelegate.persistentContainer.viewContext
-        guard let todoEntity = NSEntityDescription.entity(forEntityName: "Todo", in: manageContext) else { return }
+        guard let todoEntity = NSEntityDescription.entity(forEntityName: "Todoiniti", in: manageContext) else { return }
         let todoObject = NSManagedObject.init(entity: todoEntity, insertInto: manageContext)
         todoObject.setValue(todo.title, forKey: "title")
         todoObject.setValue(todo.details, forKey: "details")
@@ -36,7 +36,7 @@ class TodoStorage {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         let context = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todo")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todoiniti")
         
         do {
             let result = try context.fetch(fetchRequest) as! [NSManagedObject]
@@ -63,7 +63,7 @@ class TodoStorage {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         let context = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todo")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todoiniti")
         
         do {
             let result = try context.fetch(fetchRequest) as! [NSManagedObject]
@@ -85,7 +85,7 @@ class TodoStorage {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return []}
         let context = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todointiti")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todoiniti")
         
         do {
             let result = try context.fetch(fetchRequest) as! [NSManagedObject]

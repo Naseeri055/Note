@@ -63,14 +63,17 @@ class TodoDetailsVC: UIViewController {
         
     }
     
-//    @IBAction func deleteButtonClicked(_ sender: Any) {
-//        let alert = MyAlertViewController(
-//            title: "تنبيه",
-//            message: "هل أنت متأكد من الحذف؟",
-//            imageName: "warning_icon")
-//
-//        alert.addAction(title: "نعم", style: .default) { alert in
-//            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TodoDeleted"), object: nil, userInfo: ["deletedTodoIndex" : self.index])
+    @IBAction func deleteButtonClicked(_ sender: Any) {
+        _ = UIAlertController(
+            title: "Attention",
+            message: "Are you sure you want to delete the note?",
+            preferredStyle: UIAlertController.Style.alert)
+        _ = UIAlertAction(title: "Yes", style: .default) { alert in
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TodoDeleted"), object: nil, userInfo: ["deletedTodoIndex" : self.index as Any])
+        }
+            
+            
+   
 //
 //
 //            let alert = MyAlertViewController(
@@ -88,32 +91,33 @@ class TodoDetailsVC: UIViewController {
 //        alert.addAction(title: "إلغاء", style: .cancel)
 //
 //        present(alert, animated: true, completion: nil)
-//
+
         
-//        let confirmAlert = UIAlertController(title: "تنبيه", message: "هل أنت متأكد من رغبتك في إتمام عملية الحذف؟", preferredStyle: .alert)
-//        let confirmAction = UIAlertAction(title: "تأكيد الحذف", style: .destructive) { alert in
-//            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TodoDeleted"), object: nil, userInfo: ["deletedTodoIndex" : self.index])
-//
-//            let alert = UIAlertController(title: "تم", message: "تم حذف المهمة بنجاح", preferredStyle: .alert)
-//            let closeAction = UIAlertAction(title: "تم", style: .default) { alert in
-//                self.navigationController?.popViewController(animated: true)
-//            }
-//            alert.addAction(closeAction)
-//            self.present(alert, animated: true, completion: nil)
-//        }
+        let confirmAlert = UIAlertController(title: "Attention", message: "Are you sure you want to delete the note?", preferredStyle: .alert)
+        let confirmAction = UIAlertAction(title: "Confirm the deletion", style: .destructive) { alert in
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TodoDeleted"), object: nil, userInfo: ["deletedTodoIndex" : self.index as Any])
+
+            let alert = UIAlertController(title: "It was completed", message: "Deleted successfully", preferredStyle: .alert)
+            let closeAction = UIAlertAction(title: "It was completed", style: .default) { alert in
+                self.navigationController?.popViewController(animated: true)
+            }
+            alert.addAction(closeAction)
+            self.present(alert, animated: true, completion: nil)
+        }
         
-//        confirmAlert.addAction(confirmAction)
-//
-//        let cancelAction = UIAlertAction(title: "إغلاق", style: .default, handler: nil)
-//
-//        confirmAlert.addAction(cancelAction)
-//
-//
-//        present(confirmAlert, animated: true, completion: nil)
+        confirmAlert.addAction(confirmAction)
+
+        let cancelAction = UIAlertAction(title: "It was completed", style: .default, handler: nil)
+
+        confirmAlert.addAction(cancelAction)
+
+
+        present(confirmAlert, animated: true, completion: nil)
         
         
         
     }
     
+}
 
 
