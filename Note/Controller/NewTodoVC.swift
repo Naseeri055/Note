@@ -10,7 +10,7 @@
 import UIKit
 
 class NewTodoVC: UIViewController {
-
+    
     var isCreation = true
     var editedTodo: Todo?
     var editedTodoIndex: Int?
@@ -89,7 +89,7 @@ class NewTodoVC: UIViewController {
         
     }
     
-
+    
 }
 
 

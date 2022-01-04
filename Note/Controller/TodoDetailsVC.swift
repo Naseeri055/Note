@@ -8,7 +8,7 @@
 import UIKit
 
 class TodoDetailsVC: UIViewController {
-
+    
     var todo: Todo!
     var index: Int!
     
@@ -71,32 +71,32 @@ class TodoDetailsVC: UIViewController {
         _ = UIAlertAction(title: "Yes", style: .default) { alert in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TodoDeleted"), object: nil, userInfo: ["deletedTodoIndex" : self.index as Any])
         }
-            
-            
-   
-//
-//
-//            let alert = MyAlertViewController(
-//                title: "تم",
-//                message: "تمت عملية الحذف بنجاح",
-//                imageName: "warning_icon")
-//
-//            alert.addAction(title: "تم", style: .default) { alert in
-//                self.navigationController?.popViewController(animated: true)
-//            }
-//
-//            self.present(alert, animated: true, completion: nil)
-//        }
-//
-//        alert.addAction(title: "إلغاء", style: .cancel)
-//
-//        present(alert, animated: true, completion: nil)
-
+        
+        
+        
+        //
+        //
+        //            let alert = MyAlertViewController(
+        //                title: "تم",
+        //                message: "تمت عملية الحذف بنجاح",
+        //                imageName: "warning_icon")
+        //
+        //            alert.addAction(title: "تم", style: .default) { alert in
+        //                self.navigationController?.popViewController(animated: true)
+        //            }
+        //
+        //            self.present(alert, animated: true, completion: nil)
+        //        }
+        //
+        //        alert.addAction(title: "إلغاء", style: .cancel)
+        //
+        //        present(alert, animated: true, completion: nil)
+        
         
         let confirmAlert = UIAlertController(title: "Attention", message: "Are you sure you want to delete the note?", preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "Confirm the deletion", style: .destructive) { alert in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TodoDeleted"), object: nil, userInfo: ["deletedTodoIndex" : self.index as Any])
-
+            
             let alert = UIAlertController(title: "It was completed", message: "Deleted successfully", preferredStyle: .alert)
             let closeAction = UIAlertAction(title: "It was completed", style: .default) { alert in
                 self.navigationController?.popViewController(animated: true)
@@ -106,11 +106,10 @@ class TodoDetailsVC: UIViewController {
         }
         
         confirmAlert.addAction(confirmAction)
-
+        
         let cancelAction = UIAlertAction(title: "It was completed", style: .default, handler: nil)
-
+        
         confirmAlert.addAction(cancelAction)
-
 
         present(confirmAlert, animated: true, completion: nil)
         

@@ -12,9 +12,7 @@ class TodolandingVC: UIViewController {
 
     
     @IBOutlet weak var nameLable: UILabel!
-    
     @IBOutlet weak var regButt: UIButton!
-    
     @IBOutlet weak var logButt: UIButton!
     
     override func viewDidLoad() {

@@ -19,7 +19,7 @@ class TodoLoginVC: UIViewController {
     @IBOutlet weak var regisButt: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func loginButton(_ sender: Any) {
@@ -39,7 +39,7 @@ class TodoLoginVC: UIViewController {
     }
     
     
- 
     
-
+    
+    
 }

@@ -9,9 +9,9 @@ import UIKit
 import CoreData
 
 class TodosVC: UIViewController {
-    var posts = [Post]()
+    //  var posts = [Post]()
     var selectedPost:Post?
-    var selectedPostImage:UIImage?
+    //var selectedPostImage:UIImage?
     var todosArray:[Todo] = [
     ]
     @IBOutlet weak var todosTableView: UITableView!
@@ -20,17 +20,17 @@ class TodosVC: UIViewController {
         self.todosArray = TodoStorage.getTodos()
         
         super.viewDidLoad()
-//        var m = Math()
+        //        var m = Math()
         
-//        do {
-//            var r = try m.divide(num1: 40, num2: 10)
-//            print(r)
-//        }catch {
-//            let alert = UIAlertController(title: "error", message: "can't divide by zero", preferredStyle: .alert)
-//            let action = UIAlertAction(title: "ok", style: .default, handler: nil)
-//            alert.addAction(action)
-//            present(alert, animated: true, completion: nil)
-//        }
+        //        do {
+        //            var r = try m.divide(num1: 40, num2: 10)
+        //            print(r)
+        //        }catch {
+        //            let alert = UIAlertController(title: "error", message: "can't divide by zero", preferredStyle: .alert)
+        //            let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+        //            alert.addAction(action)
+        //            present(alert, animated: true, completion: nil)
+        //        }
         
         
         
@@ -76,8 +76,8 @@ class TodosVC: UIViewController {
         }
     }
     
-
-
+    
+    
     
 }
 
