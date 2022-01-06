@@ -21,6 +21,7 @@
 		7A9213532782F02A00FAC523 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9213522782F02A00FAC523 /* TodoCell.swift */; };
 		7A9213572782F0CA00FAC523 /* TodoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9213562782F0CA00FAC523 /* TodoStorage.swift */; };
 		7A92135A2782F17000FAC523 /* TodosModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A9213582782F17000FAC523 /* TodosModel.xcdatamodeld */; };
+		7ABA9DC12786C6D600F96312 /* Localozable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ABA9DC32786C6D600F96312 /* Localozable.strings */; };
 		CE03E3DF276F011C00FDDB37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E3DE276F011C00FDDB37 /* AppDelegate.swift */; };
 		CE03E3E1276F011C00FDDB37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E3E0276F011C00FDDB37 /* SceneDelegate.swift */; };
 		CE03E3E6276F011C00FDDB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03E3E4276F011C00FDDB37 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		7A9213522782F02A00FAC523 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		7A9213562782F0CA00FAC523 /* TodoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStorage.swift; sourceTree = "<group>"; };
 		7A9213592782F17000FAC523 /* TodosModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodosModel.xcdatamodel; sourceTree = "<group>"; };
+		7ABA9DC22786C6D600F96312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localozable.strings; sourceTree = "<group>"; };
+		7ABA9DC42786C6D700F96312 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localozable.strings; sourceTree = "<group>"; };
 		CE03E3DB276F011C00FDDB37 /* Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE03E3DE276F011C00FDDB37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE03E3E0276F011C00FDDB37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 				CE03E3DE276F011C00FDDB37 /* AppDelegate.swift */,
 				CE03E3E0276F011C00FDDB37 /* SceneDelegate.swift */,
 				CE03E3E7276F011D00FDDB37 /* Assets.xcassets */,
+				7ABA9DC32786C6D600F96312 /* Localozable.strings */,
 				CE03E3E9276F011D00FDDB37 /* LaunchScreen.storyboard */,
 				CE03E3EC276F011D00FDDB37 /* Info.plist */,
 			);
@@ -224,6 +228,7 @@
 				7A190800278430A200988FD7 /* GoogleService-Info.plist in Resources */,
 				CE03E3E8276F011D00FDDB37 /* Assets.xcassets in Resources */,
 				CE03E3E6276F011C00FDDB37 /* Main.storyboard in Resources */,
+				7ABA9DC12786C6D600F96312 /* Localozable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +262,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7ABA9DC32786C6D600F96312 /* Localozable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ABA9DC22786C6D600F96312 /* en */,
+				7ABA9DC42786C6D700F96312 /* ar */,
+			);
+			name = Localozable.strings;
+			sourceTree = "<group>";
+		};
 		CE03E3E4276F011C00FDDB37 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
