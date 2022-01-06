@@ -109,7 +109,7 @@
 "oh0-al-ZGV.text" = "التفاصيل";
 
 /* Class = "UILabel"; text = "The title of the note"; ObjectID = "rqp-57-kuL"; */
-"rqp-57-kuL.text" = "The title of the note";
+"rqp-57-kuL.text" = "العنوان";
 
 /* Class = "UIButton"; configuration.title = "Addendum"; ObjectID = "wyy-us-z59"; */
 "wyy-us-z59.configuration.title" = "اضافة";

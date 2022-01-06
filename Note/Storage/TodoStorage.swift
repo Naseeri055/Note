@@ -17,7 +17,6 @@ class TodoStorage {
         let todoObject = NSManagedObject.init(entity: todoEntity, insertInto: manageContext)
         todoObject.setValue(todo.title, forKey: "title")
         todoObject.setValue(todo.details, forKey: "details")
-        
         if let image = todo.image {
             let imageData = image.jpegData(compressionQuality: 1)
             todoObject.setValue(imageData, forKey: "image")
