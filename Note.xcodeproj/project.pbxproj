@@ -27,9 +27,7 @@
 		CE03E3E6276F011C00FDDB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03E3E4276F011C00FDDB37 /* Main.storyboard */; };
 		CE03E3E8276F011D00FDDB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03E3E7276F011D00FDDB37 /* Assets.xcassets */; };
 		CE03E3EB276F011D00FDDB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03E3E9276F011D00FDDB37 /* LaunchScreen.storyboard */; };
-		CE03E3FD276F027600FDDB37 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E3FC276F027600FDDB37 /* ImageView.swift */; };
 		CE03E3FF276F028600FDDB37 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E3FE276F028600FDDB37 /* Activity.swift */; };
-		CE03E412276FA77300FDDB37 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E411276FA77300FDDB37 /* PostViewController.swift */; };
 		CE03E4142770758800FDDB37 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E4132770758800FDDB37 /* Post.swift */; };
 		CE03E416277075F300FDDB37 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E415277075F300FDDB37 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -58,9 +56,7 @@
 		CE03E3E0276F011C00FDDB37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE03E3E7276F011D00FDDB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE03E3EC276F011D00FDDB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE03E3FC276F027600FDDB37 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		CE03E3FE276F028600FDDB37 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		CE03E411276FA77300FDDB37 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		CE03E4132770758800FDDB37 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CE03E415277075F300FDDB37 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +123,6 @@
 			children = (
 				7A9213502782F00500FAC523 /* Todo.swift */,
 				CE03E3FE276F028600FDDB37 /* Activity.swift */,
-				CE03E3FC276F027600FDDB37 /* ImageView.swift */,
 				CE03E4132770758800FDDB37 /* Post.swift */,
 				CE03E415277075F300FDDB37 /* User.swift */,
 			);
@@ -152,7 +147,6 @@
 				7A6703A427831F59005A5F11 /* TodoSignUpVC.swift */,
 				7A6703A627831F7B005A5F11 /* TodoLoginVC.swift */,
 				7A92134E2782EFEB00FAC523 /* TodoDetailsVC.swift */,
-				CE03E411276FA77300FDDB37 /* PostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,8 +239,6 @@
 				7A92135A2782F17000FAC523 /* TodosModel.xcdatamodeld in Sources */,
 				7A92134F2782EFEB00FAC523 /* TodoDetailsVC.swift in Sources */,
 				7A92134D2782EFC700FAC523 /* NewTodoVC.swift in Sources */,
-				CE03E3FD276F027600FDDB37 /* ImageView.swift in Sources */,
-				CE03E412276FA77300FDDB37 /* PostViewController.swift in Sources */,
 				7A9213572782F0CA00FAC523 /* TodoStorage.swift in Sources */,
 				7A6703A927831FA2005A5F11 /* TodolandingVC.swift in Sources */,
 				CE03E3DF276F011C00FDDB37 /* AppDelegate.swift in Sources */,
@@ -418,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -428,6 +421,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -458,6 +453,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
