@@ -47,7 +47,6 @@
 		7A9213592782F17000FAC523 /* TodosModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodosModel.xcdatamodel; sourceTree = "<group>"; };
 		7ABA9DC22786C6D600F96312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localozable.strings; sourceTree = "<group>"; };
 		7ACBDB082787072900E0B520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7ACBDB092787073C00E0B520 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		7ACBDB0A27870C4700E0B520 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localozable.strings; sourceTree = "<group>"; };
 		7ACBDB0B27870E3800E0B520 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7ACBDB0E278711B300E0B520 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -267,7 +266,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				7ACBDB082787072900E0B520 /* Base */,
-				7ACBDB092787073C00E0B520 /* ar */,
 				7ACBDB0E278711B300E0B520 /* en */,
 			);
 			name = Main.storyboard;

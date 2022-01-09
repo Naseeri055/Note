@@ -494,7 +494,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NJ9-FG-hpm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NJ9-FG-hpm">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -566,7 +566,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="My notes" largeTitleDisplayMode="always" id="7k3-bO-a7a" userLabel="My notes">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="9Ze-nI-7FX">
+                        <barButtonItem key="rightBarButtonItem" springLoaded="YES" systemItem="stop" changesSelectionAsPrimaryAction="YES" id="9Ze-nI-7FX">
                             <connections>
                                 <action selector="LogoOut:" destination="Vye-Xj-NQe" id="mnq-kf-fGO"/>
                             </connections>
@@ -718,7 +718,7 @@ TodosVC.dia</string>
                     <tabBarItem key="tabBarItem" title="Addendum" image="plus" catalog="system" id="L7T-Lz-Rvj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="y8s-mC-S5V">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -739,13 +739,29 @@ TodosVC.dia</string>
             </objects>
             <point key="canvasLocation" x="249" y="871"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Tel-og-vO6">
+            <objects>
+                <viewController id="KUP-nl-KJF" customClass="NewTodoVC" customModule="Note" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="J94-K0-Yra">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e2E-dt-2iv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="gearshape.2" catalog="system" id="flI-Nr-bJf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHA-K4-Yff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-813" y="165"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7xx-5T-0sX">
             <objects>
                 <tabBarController storyboardIdentifier="TodoVC" autoresizesArchivedViewToFullSize="NO" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" id="GBn-uq-wjt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tqM-7m-pdG">
+                    <tabBar key="tabBar" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" insetsLayoutMarginsFromSafeArea="NO" id="tqM-7m-pdG">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="selectedImageTintColor" systemColor="systemGreenColor"/>
@@ -753,6 +769,7 @@ TodosVC.dia</string>
                     <connections>
                         <segue destination="1un-HA-6BY" kind="relationship" relationship="viewControllers" id="NYV-Cs-wH6"/>
                         <segue destination="CAS-23-4vT" kind="relationship" relationship="viewControllers" id="7KX-kT-R9z"/>
+                        <segue destination="KUP-nl-KJF" kind="relationship" relationship="viewControllers" id="7On-h4-Mjv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVu-Di-Yms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -766,6 +783,7 @@ TodosVC.dia</string>
     <color key="tintColor" systemColor="systemGreenColor"/>
     <resources>
         <image name="Image-1" width="300" height="168"/>
+        <image name="gearshape.2" catalog="system" width="128" height="100"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="Color">

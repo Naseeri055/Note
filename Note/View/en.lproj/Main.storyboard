@@ -392,13 +392,13 @@
                                 <rect key="frame" x="10" y="98" width="394" height="619"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Xgs-tE-dg2">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="179.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="168"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UVc-QJ-sYU">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="140"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="129"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TW8-r4-JYO">
-                                                <rect key="frame" x="0.0" y="140" width="394" height="39.5"/>
+                                                <rect key="frame" x="0.0" y="129" width="394" height="39"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="change photo">
                                                     <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
@@ -408,15 +408,18 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UVc-QJ-sYU" firstAttribute="width" secondItem="TW8-r4-JYO" secondAttribute="height" multiplier="394:39" id="Jb5-Jy-iWl"/>
+                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The title of the note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-57-kuL">
-                                        <rect key="frame" x="0.0" y="196.5" width="394" height="28"/>
+                                        <rect key="frame" x="0.0" y="185" width="394" height="28"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QN2-ap-362" userLabel="عنوان الملاحظة" customClass="YokoTextField" customModule="TextFieldEffects">
-                                        <rect key="frame" x="0.0" y="241.5" width="394" height="40"/>
+                                        <rect key="frame" x="0.0" y="230" width="394" height="40"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OoB-X3-u2X"/>
@@ -430,7 +433,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-9t-ZDh" userLabel="Todo Title SV">
-                                        <rect key="frame" x="0.0" y="298.5" width="394" height="40"/>
+                                        <rect key="frame" x="0.0" y="287" width="394" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-CN-6Zd">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
@@ -446,7 +449,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7Gv-QM-giE" userLabel="Todo Details SV">
-                                        <rect key="frame" x="0.0" y="355.5" width="394" height="263.5"/>
+                                        <rect key="frame" x="0.0" y="344" width="394" height="275"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh0-al-ZGV">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="29"/>
@@ -455,7 +458,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="65a-zd-u5F">
-                                                <rect key="frame" x="0.0" y="32" width="394" height="231.5"/>
+                                                <rect key="frame" x="0.0" y="32" width="394" height="243"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
